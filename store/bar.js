@@ -19,7 +19,7 @@ export const actions = {
   load(context) {
     const { commit } = context
     commit(`LOADING`)
-    this.$axios.get(`bar.json`).then(({ data }) => {
+    this.$axios.get(`bar`).then(({ data }) => {
       commit(`UPDATE_BAR`, data)
       commit(`LOADING_DONE`)
     })

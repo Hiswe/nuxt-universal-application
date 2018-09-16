@@ -25,7 +25,7 @@ module.exports = {
   plugins: [`@/plugins/i18n.js`, `@/plugins/global-components.js`],
   modules: [`@nuxtjs/axios`],
   axios: {
-    baseURL: `127.0.0.1/api`,
+    baseURL: `http://127.0.0.1/api`,
     browserBaseURL: `/api`,
   },
 }

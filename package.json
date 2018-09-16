@@ -2,9 +2,16 @@
   "name": "nuxt-universal-application",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build"
+    "build": "nuxt build",
+    "serve": "node server/index.js"
   },
   "dependencies": {
+    "faker": "^4.1.0",
+    "koa": "^2.5.3",
+    "koa-body": "^4.0.4",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
     "nuxt": "^1.4.2"
   },
   "devDependencies": {
