@@ -1,6 +1,8 @@
 # nuxt-universal-application
 
-a nuxt universal application example
+A [Nuxt](https://nuxtjs.org/)/[koa](https://koajs.com/) universal application example.
+
+This is a demo repository for the [Vue with Nuxt article](https://hiswe.github.io/2018/12-vue-with-nuxt/)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
