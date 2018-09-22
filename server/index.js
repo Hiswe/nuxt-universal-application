@@ -1,9 +1,9 @@
-const Koa = require('koa')
-const Router = require('koa-router')
-const faker = require('faker')
-const formatJson = require('koa-json')
-const logger = require('koa-logger')
-const { Nuxt, Builder } = require('nuxt')
+import Koa from 'koa'
+import Router from 'koa-router'
+import faker from 'faker'
+import formatJson from 'koa-json'
+import logger from 'koa-logger'
+import { Nuxt, Builder } from 'nuxt'
 
 startServer()
 

@@ -1,6 +1,6 @@
-const pkg = require(`./package.json`)
+import pkg from './package.json'
 
-module.exports = {
+export default {
   head: {
     title: pkg.name.replace(`-`, ` `),
     meta: [
@@ -10,18 +10,6 @@ module.exports = {
     ],
   },
   css: [`@/assets/css/global.scss`],
-  build: {
-    vendor: [`vue-i18n`],
-    postcss: {
-      plugins: {
-        'postcss-cssnext': {
-          features: {
-            customProperties: false,
-          },
-        },
-      },
-    },
-  },
   plugins: [`@/plugins/i18n.js`, `@/plugins/global-components.js`],
   modules: [`@nuxtjs/axios`],
   axios: {
