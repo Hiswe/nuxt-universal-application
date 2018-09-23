@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 :root {
-  --color-vue: rgb(79, 192, 141);
+  --color-vue: hsl(153, 47%, 53%);
+  --color-vue-light: hsl(153, 47%, 95%);
 }
 html {
   -webkit-text-size-adjust: 100%;
@@ -18,4 +19,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+}
+
+body.client-side-only {
+  background: var(--color-vue-light);
 }

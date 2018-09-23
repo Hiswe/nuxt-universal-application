@@ -1,12 +1,13 @@
 <template lang="pug">
 nua-wrapper
   nua-title {{ $t(`title`) }}
-  ul
-    li(v-for="foo in foos" :key="foo.id") {{ foo.text }}
+  nua-list(:items="foos")
 </template>
 
 <script>
 import { mapState, mapMutations } from 'vuex'
+
+import List from '~/components/list'
 
 const i18n = {
   messages: {
@@ -19,6 +20,9 @@ export default {
   i18n,
   fetch({ store }) {
     return store.dispatch(`foo/load`)
+  },
+  components: {
+    'nua-list': List,
   },
   computed: {
     ...mapState({

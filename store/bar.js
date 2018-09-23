@@ -19,9 +19,12 @@ export const actions = {
   load(context) {
     const { commit } = context
     commit(`LOADING`)
-    return this.$axios.get(`bar`).then(({ data }) => {
-      commit(`UPDATE_BAR`, data)
-      commit(`LOADING_DONE`)
-    })
+    return this.$axios
+      .get(`bar`)
+      .then(({ data }) => {
+        commit(`UPDATE_BAR`, data)
+        commit(`LOADING_DONE`)
+      })
+      .catch(error => console.log(error))
   },
 }
