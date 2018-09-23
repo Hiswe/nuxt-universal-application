@@ -7,9 +7,12 @@ This is a demo repository for the [Vue with Nuxt article](https://hiswe.github.i
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+
 - [requirements](#requirements)
 - [dev stack](#dev-stack)
-- [start](#start)
+- [commands](#commands)
+  - [development server](#development-server)
+  - [production server](#production-server)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -26,10 +29,22 @@ This is a demo repository for the [Vue with Nuxt article](https://hiswe.github.i
 - [vue-i18n](https://kazupon.github.io/vue-i18n/)
 - [koa](https://koajs.com/)
 
-## start
+## commands
+
+### development server
 
 ```
-yarn serve
+yarn install
+yarn dev
+```
+
+application will be running on http://localhost:3000/
+
+### production server
+
+```
+yarn install
+yarn start
 ```
 
 application will be running on http://localhost:3000/
