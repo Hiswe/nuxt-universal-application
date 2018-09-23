@@ -1,9 +1,12 @@
+import chalk from 'chalk'
 import Koa from 'koa'
 import Router from 'koa-router'
 import faker from 'faker'
 import formatJson from 'koa-json'
 import logger from 'koa-logger'
 import { Nuxt, Builder } from 'nuxt'
+
+import config from '../nuxt.config.js'
 
 startServer()
 
@@ -44,7 +47,6 @@ async function startServer() {
 
   //----- NUXT
 
-  const config = require('../nuxt.config.js')
   config.dev = !(app.env === `production`)
 
   // Instantiate nuxt.js
@@ -52,6 +54,7 @@ async function startServer() {
 
   // Build in development
   if (config.dev) {
+    console.log(chalk.yellow(`SPA build for dev`))
     const builder = new Builder(nuxt)
     await builder.build()
   }
@@ -64,6 +67,6 @@ async function startServer() {
   })
 
   app.listen(PORT, HOST, function endInit() {
-    console.log(`APP Server is listening on ${HOST}:${PORT}`)
+    console.log(`APP is running at ${chalk.green(`${HOST}:${PORT}`)}`)
   })
 }
