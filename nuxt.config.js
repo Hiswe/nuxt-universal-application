@@ -11,7 +11,11 @@ export default {
     ],
   },
   css: [`@/assets/css/global.scss`],
-  plugins: [`@/plugins/i18n.js`, `@/plugins/global-components.js`],
+  plugins: [
+    `@/plugins/i18n.js`,
+    `@/plugins/global-components.js`,
+    { src: `@/plugins/browser-components.js`, ssr: false },
+  ],
   modules: [`@nuxtjs/axios`],
   axios: {
     baseURL: `http://127.0.0.1:3000/api`,
