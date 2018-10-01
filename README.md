@@ -18,7 +18,7 @@ This is a demo repository for the [Vue with Nuxt article](https://hiswe.github.i
 ## requirements
 
 - [node](http://nodejs.org/download/) >= 10.11.0
-- [yarn](https://yarnpkg.com/lang/en/) >= 1.9.4
+- [yarn](https://yarnpkg.com/lang/en/) >= 1.10.1
 
 ## dev stack
 
